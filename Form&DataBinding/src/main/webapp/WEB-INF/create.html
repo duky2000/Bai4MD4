@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form th:action="@{create}" th:object="${list}" method="post" nctype="multipart/form-data"
+      enctype="multipart/form-data">
+  <table class="table">
+    <tbody>
+    <tr>
+
+
+      <td><input placeholder="nhập name" th:field="*{name}"></td>
+      <td><input placeholder="nhập tên ca sĩ" th:field="*{singerName}"></td>
+      <td><input placeholder="nhập loại nhạc" th:field="*{category.name}"></td>
+
+      <td>
+        <input type="file" name="upMusic">
+      </td>
+
+    </tbody>
+  </table>
+  <button type="submit" class="btn btn-success">Create</button>
+</form>
+</body>
+</html>

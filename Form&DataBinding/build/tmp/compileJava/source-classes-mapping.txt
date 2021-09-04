@@ -1,0 +1,18 @@
+Service/MailboxService.java
+ Service.MailboxService
+Config/ApplicationConfig.java
+ Config.ApplicationConfig
+Config/ApplicationInitializer.java
+ Config.ApplicationInitializer
+Model/Mailbox.java
+ Model.Mailbox
+Model/Category.java
+ Model.Category
+Service/MusicService.java
+ Service.MusicService
+Model/Music.java
+ Model.Music
+Controller/MailboxController.java
+ Controller.MailboxController
+Controller/MusicController.java
+ Controller.MusicController

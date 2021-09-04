@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div class="container">
+
+    <form th:object="${music}" method="post" enctype="multipart/form-data">
+
+        <table class="table table-bordered table-sm">
+
+            <tbody>
+
+            <tr>
+                <td><input type="text" name="name" th:field="*{name}" ></td>
+            </tr>
+            <tr>
+                <td><input type="text" name="singerName" th:field="*{singerName}" ></td>
+            </tr>
+            <tr>
+                <td><input type="text" name="category" th:field="*{category.name}" ></td>
+            </tr>
+            <tr>
+                <td><input type="file" name="upFile"  ></td>
+            </tr>
+            <tr>
+                <td>
+                    <button type="submit" class="btn btn-success">Edit</button>
+                    |<a href="/homeProduct" class="btn btn-secondary">Back</a>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+    </form>
+</div>
+</body>
+</html>
